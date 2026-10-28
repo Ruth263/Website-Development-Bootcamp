@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"> <!--This is a comment. Be sure to indicate the language Cheesy😬-->
+    <head>
+        <title>My Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" 
+        > <!-- Viewport ensures that the scale should match that of a mobile phone-->
+        <meta name="author" content="Ruth Chiuto">
+        <link rel="icon" href="image.png" type="image/png"> <!--rel means relationship. The logo at the very top of the website is called the fav icon. The rel attribute stands for relationship, and its whole job is to tell the browser how the resource you are linking to connects to the current page-->
+    </head>
+    <body>
+        <header>
+            <h1>My Student Profile📚📒</h1>
+            <p>Welcome to the second session of the web development bootcamp</p>
+        </header>
+        <main>
+           
+            <section>
+                <h3>Learning Activities and Goals</h3>
+                <p>Currently learning <abbr title="Hyper Text Markup Language">HTML</abbr> strucures.</p>
+                <p>On my way to becoming a web developer. My goal is to build <strong>clear</strong> and <em>accessible</em> websites</p>
+                <p>&quot; We will have an adventure learning HTML &quot; - D.Mugala</p>
+            </section>
+
+            <section>
+                <p><strong>This Section Below Will Be About Lists.</strong></p>
+                <p>Please take the details of each and every student. Please include the following:</p>
+                <ol>
+                    <li>Name</li>
+                    <li>Age</li>
+                    <li>Programme</li>
+                    <li>Student Number</li>
+                </ol>
+                <p>Please also allow them to provide a list of their favourite activities. For example:</p>
+                    <ul>
+                        <li>Fishing</li>
+                        <li>Drawing</li>
+                        <li>Dancing</li>
+                        <li>Coding</li>
+                    </ul>
+                <p>We can also have nested lists</p>
+                <ul>
+                    <li>Front End
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Back End
+                        <ul>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>We will now be looking at description lists</p>
+                <dl>
+                    <dt>HTML</dt> <!--This means description term, we can also have multiple terms having only one description-->
+                    <dd>A language used to create the structure of websites</dd> <!--Description definition-->
+                    <dt>CSS</dt>
+                    <dd>A language used to style websites</dd>
+                </dl> <!--Using dl to indicate that this is a description list-->
+
+                <dl>
+                    <dt>JS</dt>
+                    <dt>JavaScript</dt>
+                    <dd>A language used to give behaviour and interaction with the website.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <p>In this section, we will be dealing with navigation</p>
+                <nav>
+                    <ul>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="index.html">Home</a></li> <!-- Or you could use "#"-->
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <p>Downloading things from the website.</p>
+                <a href="Beginners_Guide_to_HTML.pdf">Download PDF</a>
+            </section>
+
+            <hr>
+            <section id="html_images">
+                <figure>
+                    <img 
+                        src="html_images/aesthetic_tech_workspace.jpg" alt="Aesthetic Workspace Environment"
+                        width="400"
+                        height="400"
+                        loading="lazy">
+                        <figcaption>Aesthetic Workspace Environment😊</figcaption> 
+                </figure>    
+            </section>
+            <hr>
+
+            <section>
+                <p>Contact Info:</p>
+                <a href="mailto:ruthchiuto.263@gmail.com">Email Me</a><!--Not recommended to use mailto, it's better to ask the user to put in their contact details instead-->
+                <br>
+                <a href="Tel:+260770270727">Call Me: +260770270727</a>
+            </section>
+
+            <section>
+                <fieldset><!--Groups related information together. It moves with the legend element-->
+                    <legend>Personal Information</legend>
+                    <form action="https://httpbin.org/get" method="post">
+                    <p>
+                        <label for="firstName">First Name:</label><br><!--text input shown to the user. e.g full name. The for attribute links to the id attribute-->
+                        <input name="firstName" id="firstName" type="text" placeholder="Please enter your first name" required><!--these are the attributes/properties of the input tag. practice camel casing for this-->
+                    </p>
+                     <p>
+                        <label for="lastName">Last Name:</label><br>
+                        <input name="lastName" id="lastName" type="text" placeholder="Please enter you last name">
+                    </p>
+                    <p>
+                        <label for="password">Password: </label><br>
+                        <input name="password" id="password" type="password" placeholder="Please enter your password here">
+                    </p>
+                    <p>
+                        <label for="email">Email: </label><br>
+                        <input name="email" id="email" type="email" placeholder="Please enter your email here">
+                    </p>
+                    <p>
+                        <label for="">What was your favourite year? </label> <!--this ensures that the user enters the information at the required place/on the correct spot. the for attribute ensures that. -->
+                        <input name="favYear" id="year" type="number" min="2000" max="2025" value="2010" step="5">
+                    </p>
+                </form>
+
+                <button type="submit">Submit</button>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Foods</legend>
+                        <p>
+                            <label for="food">Choose Your Favorite Food</label>
+                            <select id="food" name="food">
+                            <option value="">Select your prefered choice</option> <!--not fully sure why this particular line is necessary-->
+                                <optgroup label="Meat Based Products">
+                                    <option value="chicken">Chicken</option>
+                                    <option value="beef">Beef</option>
+                                    <option value="shawarma">Shawarma</option>
+                                </optgroup>
+                                <optgroup label="Non meat Products">
+                                    <option value="kale">Kale</option>
+                                    <option value="eggs">Eggs</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                
+                <!--Below is an alternative to the code above, although the one above is most prefered-->
+                           <!--  <p>
+                                <label for="ide">Choose an IDE</label>
+                                <input name="ide" id="ide" list="ide"> the lsit attribute connects the list to the... input
+                                <datalist id="ide">
+                                    <option value="VS code"> VS code
+                                    <option value="Intellgi"> Intelligi
+                                    <option value="Eclipse"> Eclipse
+                                    <option value="Visual Studio"> Visual Studio
+                                </datalist>
+                            </p> -->
+
+                            <p>
+                                <label for="">Write more about your favorite food: </label><br>
+                                <textarea id="more" name="more" rows="5" cols="40" placeholder="Write more information about your food"></textarea>
+                            </p>
+                </fieldset> 
+                
+                <fieldset>
+                    <legend>Pets and Animals</legend>
+                    <p>
+                        <label for="animal">Tick Your Favorite Animal:
+                            <input id="lion" name="lion" type="checkbox" value="Lion"> Lion
+                            <input id="elephant" name="elephant" type="checkbox" value="elephant"> Elephant
+                        </label>
+                    </p>
+                    <p>
+                        <label for="animal">Choose Your Pet:
+                            <input id="cat" name="animal" type="radio" value="cat"> Cat
+                            <input id="dog" name="animal" type="radio" value="dog"> Dog
+                            <input id="none" name="animal" type="radio" value="none"> None
+                        </label>
+                    </p>
+                </fieldset>
+                
+            </section>
+
+
+            <details>
+                <summary>What is CSS?🤔</summary>
+                <p>CSS - Cascading Style Sheets</p>
+            </details>
+
+             <hr>
+
+            <footer>
+                <p>&lt;&lt; &copy; 2026 Beautiful pieces &gt;&gt;</p> <!-- &lt is the less than sign, and &gt means greater than-->
+
+                <time datetime="2026-10-12">
+                    2026 October 12
+                </time>
+            </footer>
+
+        </main> 
+    </body> 
+</html>

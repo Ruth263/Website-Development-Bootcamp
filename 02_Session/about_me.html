@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>My Website | About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" > <!-- Viewport ensures that the scale should match that of a mobile phone-->
+        <meta name="author" content="Ruth Chiuto">
+        <link rel="icon" href="image.png" type="image/png">
+    </head>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption{
+            margin-bottom: 12px;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        tfoot{
+            font-weight: 700;
+        }
+    </style>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section> <!--This section basicallly contains information about me-->
+                <h1><mark>About Me</mark></h1>
+                <p>This is my second HTML class</p> 
+                <address> <!--Me trying to understand how the address tag is used/implemented in HTML-->
+                    Written by Ruth Chiuto<br>
+                    Email: ruthchiuto.263@gmail.com<br>
+                    Residence: Makeni, Lusaka, Zambia.
+                </address>
+
+                <hr>
+
+                <table>
+                    <caption><strong>HTML Schedule</strong></caption>
+                    <thead>
+                        <tr><!--simply means table rows-->
+                            <th scope="col">Week</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Introduction</td>
+                            <td>Profile</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Semantic</td>
+                            <td>Login</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                           <td colspan="2">Cohort 1 - FrontEnd</td> 
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </section>
+        </main>
+         
+    </body>
+
+</html>

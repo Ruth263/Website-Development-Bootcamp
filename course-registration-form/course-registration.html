@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Bootcamp</h1>
+        <p>Cohort 1 Front-End Registration</p>
+    </header>
+
+    <main>
+        <!-- the purpose of this form is to enable students to register for a particular course or courses -->
+        <!-- This form collects applicant personal details -->
+        <form action="https://httpbin.org/get" method="post">
+            
+            <!-- Personal details fieldset -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <p>
+                    <label for="full-name">Full Name *</label>
+                    <input id="full-name" name="name" type="text" placeholder="Jane Musonda" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email-address">Email Address *</label>
+                    <input id="email-address" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="phone-number">Phone Number</label>
+                    <input id="phone-number" name="phone" type="tel" placeholder="+260..." autocomplete="tel">
+                </p>
+            </fieldset>
+
+            <!-- Learning plan fieldset -->
+            <fieldset>
+                <legend>Your Learning Plan</legend>
+
+                <p>
+                    <label for="experience">Current Experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select one</option>
+                        <optgroup label="Beginner Levels">
+                            <option value="new">Completely new</option>
+                            <option value="some-html">I know a little HTML</option>
+                        </optgroup>
+                        <optgroup label="Advanced Levels">
+                            <option value="some-css">I have tried HTML and CSS</option>
+                            <option value="pro">Experienced developer</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="editor-choice">Preferred Editor</label>
+                    <input id="editor-choice" name="editor" list="editor-options" placeholder="Type or select...">
+                    <datalist id="editor-options">
+                        <option value="Visual Studio Code">
+                        <option value="Notepad++">
+                        <option value="Sublime Text">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="weekly-hours">Hours available each week</label>
+                    <input id="weekly-hours" name="weekly_hours" type="number" min="1" max="40" step="1" value="5">
+                </p>
+
+                <!--Textarea for goals -->
+                <p>
+                    <label for="goals">What would you like to build?</label><br>
+                    <textarea id="goals" name="goals" rows="4" placeholder="Describe your goal..."></textarea>
+                </p>
+            </fieldset>
+
+            <!-- Checkbox with connected label-->
+            <p>
+                <input id="updates" name="updates" type="checkbox" value="yes">
+                <label for="updates">I would like to receive course updates.</label>
+            </p>
+            <button type="submit">Send interest form</button>
+            <button type="reset">Clear answers</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;RC Designs | Learn, build and practise.</p>
+    </footer>
+
+</body>
+</html>

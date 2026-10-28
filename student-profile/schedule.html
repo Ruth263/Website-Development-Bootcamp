@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="schedule.jpg" type="schedule/jpg">
+        <title>Student Profile | Schedule</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Schedule</h1>
+             <p>Welcome to our schedule📋. Feel free to have a look.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <table>
+                    <caption>Frontend Bootcamp Schedule</caption>
+                    <thead> <!--the thead gives meaning to a particular table -->
+                        <tr>
+                            <th scope="col">Week</th> <!-- the scope emphasizes how the table is to be read... while col ensures that all the details entered under a particular column belong to that column. the th makes the column headings bold-->
+                            <th scope="col">Day</th>
+                            <th scope="col">Learning Topic</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">1</th>
+                            <td>Monday</td>
+                            <td>HTML Basics</td>
+                            <td>First Web Page/Student Profile</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>HTML lists</td>
+                            <td>Creating a list</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>HTML links</td>
+                            <td>Creating a list containing links</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3">2</th>
+                            <td>Monday</td>
+                            <td>Downloading from website</td>
+                            <td>No task yet</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>HTML tables</td>
+                            <td>Creating a schedule</td>
+                        </tr>
+                        <tr>
+                            <td>Thursdayday</td>
+                            <td>HTML forms</td>
+                            <td>Creating a student form</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Cohort 1 - Frontend</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
